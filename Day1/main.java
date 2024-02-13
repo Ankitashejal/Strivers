@@ -2,7 +2,7 @@
     public class main {
         public static void main(String[] args) {
             int[] A = {10, 5, 7, 8, 20};
-            System.out.println("The largest element in the array is: "  + arr );
+            System.out.println("The largest element in the array is: "  + arr); 
         }
     
         public int largest(int arr[], int n)

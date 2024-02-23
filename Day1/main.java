@@ -1,18 +1,36 @@
 
-    public class main {
+//1.Brute force approach
+//sort the array and the print(arr-1).
+//Time-C = O(nlogn)
+import java.util.Arrays;
+
+public class main{
         public static void main(String[] args) {
-            int[] A = {10, 5, 7, 8, 20};
-            System.out.println("The largest element in the array is: "  + arr); 
-        }
-    
-        public int largest(int arr[], int n)
-        {
-            int a=Integer.MIN_VALUE;
-          for(int i=0;i<n;i++){
-              if(arr[i]>a)a=arr[i];
+            int arr[] =  {2,5,1,3,0};
+            System.out.println("The Largest element in the array is: " + sort(arr));
+           
           }
-          return a;
-        }
-        }
-    
-    
+          static int sort(int arr[]) {
+            Arrays.sort(arr);
+            return arr[arr.length-1];
+    }
+}
+
+//2.Optimal approach
+//Time-C = O(n)
+public class Optimalapproach {
+    public static void main(String[] args) {
+                int[] A = {10, 5, 7, 8, 20};
+                System.out.println("The largest element in the array is: "  + arr); 
+            }
+        
+            public int largest(int arr[], int n)
+            {
+                int a=Integer.MIN_VALUE;
+              for(int i=0;i<n;i++){
+                  if(arr[i]>a) //If an element is greater than the current value of a, a is updated to that element.
+                  a=arr[i]; 
+              }
+              return a;
+            }
+}

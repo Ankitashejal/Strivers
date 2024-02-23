@@ -1,4 +1,4 @@
-package Array.Easyyy;
+package Basic_Arrays.Easyyy;
 import java.util.Arrays;
 
 //1.Brute force approach
